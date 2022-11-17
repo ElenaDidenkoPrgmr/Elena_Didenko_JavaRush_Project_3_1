@@ -1,4 +1,8 @@
-package com.javarush.quest;
+package servlet;
+
+import com.javarush.quest.QuestService;
+import com.javarush.quest.Question;
+import com.javarush.quest.UserRep;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
