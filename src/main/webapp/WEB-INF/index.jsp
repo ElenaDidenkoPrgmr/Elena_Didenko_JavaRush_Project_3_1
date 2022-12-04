@@ -11,21 +11,14 @@
 </head>
 
 <body id="body">
-<%--вставить стандартную шапку
-<%@include file="questHeader.jsp" %>--%>
-
-
 <div id="container">
-
     <div>
-
         <img src="${pageContext.request.contextPath}/img/header.png" alt="Header image" width=100% height="304">
     </div>
     <div id="header">
 
         <h2>Добро пожаловать в квест!</h2>
     </div>
-
 
     <div id="navigation">
         <h5>Блок навигации</h5>
@@ -52,11 +45,8 @@
             <button type="submit" class="btn btn-primary" >Начать квест</button>
         </form>
     </div>
-
     <div id="clear">
-
     </div>
-
     <div id="footer">
         <h2>footer (низ сайта)</h2>
     </div>

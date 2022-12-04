@@ -15,14 +15,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@SuppressWarnings("unchecked")
 @WebServlet("/logic")
 public class QuestServlet extends HttpServlet {
     private final QuestService questService = new QuestService();
     Map<Integer, Question> questionMap;//= questService.getQuestMap();
     private final int FIRST_QUESTION = 7;
     Map<String, Integer> userRep = new HashMap();
-
 
     @Override
     public void init(ServletConfig config) throws ServletException {
@@ -32,7 +30,6 @@ public class QuestServlet extends HttpServlet {
 
         System.out.println("Init method with ServletConfig ended");
     }
-
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -70,8 +67,6 @@ public class QuestServlet extends HttpServlet {
         } else {
             getServletContext().getRequestDispatcher("/WEB-INF/quest.jsp").forward(request, response);
         }
-
-
     }
 
     private StringBuilder getStatistics(HttpServletRequest request) {
@@ -85,5 +80,4 @@ public class QuestServlet extends HttpServlet {
                 append("Number of games played: ").
                 append(userRep.get(session.getAttribute("username")));
     }
-
 }

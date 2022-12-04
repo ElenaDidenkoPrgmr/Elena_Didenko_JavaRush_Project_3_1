@@ -12,9 +12,6 @@
 </head>
 
 <body id="body">
-<%--вставить стандартную шапку
-<%@include file="questHeader.jsp" %>--%>
-
 
 <div id="container">
 

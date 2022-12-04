@@ -9,14 +9,9 @@
 
 </head>
 <body id="body">
-<%--вставить стандартную шапку
-<%@include file="questHeader.jsp" %>--%>
-
-
 <div id="container">
 
     <div>
-
         <img src="${pageContext.request.contextPath}/img/header.png" alt="Header image" width=100% height="304">
     </div>
     <div id="header">
@@ -24,16 +19,12 @@
         <h2>Добро пожаловать в квест!</h2>
     </div>
 
-
     <div id="navigation">
         <h5>Блок навигации</h5>
     </div>
 
     <div id="sidebar">
-        <!--<h2>Статистика:</h2>
-            <p>${statistics}</p>-->
         <%@include file="statistics.jsp" %>
-
     </div>
 
     <div id="content" class="p-4">

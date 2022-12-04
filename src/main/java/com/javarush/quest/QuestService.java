@@ -28,36 +28,5 @@ public class QuestService {
             throw new RuntimeException(e);
         }
     }
-
-
-}
-/*
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-@Getter
-@Setter
-@NoArgsConstructor
-class Question implements Serializable {
-
-    private int id;
-    private String text;
-    List<Answer> answers;
-    @JsonProperty
-    private boolean isWin;
-    @JsonProperty
-    private boolean isLoose;
-
-    public String getText() {
-        return text;
-    }
 }
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-@Getter
-@Setter
-@NoArgsConstructor
-class Answer implements Serializable {
-    String text;
-    int nextQuestionId;
-}
-*/
