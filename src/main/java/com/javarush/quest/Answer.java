@@ -23,7 +23,7 @@ import java.io.Serializable;
         String text;
         int nextQuestionId;
 
-        @WebServlet(
+       /* @WebServlet(
                 name = "MyServlet",
                 urlPatterns = {"/hello"}
         )
@@ -38,6 +38,6 @@ import java.io.Serializable;
                 out.close();
             }
 
-        }
+        }*/
     }
 

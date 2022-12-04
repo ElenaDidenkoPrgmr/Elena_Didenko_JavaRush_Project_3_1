@@ -5,6 +5,7 @@ import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import org.apache.catalina.LifecycleException;
 import org.apache.catalina.WebResourceRoot;
 import org.apache.catalina.WebResourceSet;
 import org.apache.catalina.core.StandardContext;
@@ -14,6 +15,8 @@ import org.apache.catalina.webresources.EmptyResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
 import org.apache.tomcat.util.scan.Constants;
 import org.apache.tomcat.util.scan.StandardJarScanFilter;
+
+import javax.servlet.ServletException;
 
 public class Main {
 
@@ -78,4 +81,17 @@ public class Main {
         tomcat.start();
         tomcat.getServer().await();
     }
+   /*public static void main(String[] args) throws LifecycleException, ServletException {
+       String contextPath = "/UploadApp";
+       String webappDir = new File("webapp").getAbsolutePath();
+
+       Tomcat tomcat = new Tomcat();
+       tomcat.setBaseDir("temp");
+       tomcat.setPort(8080);
+
+       tomcat.addWebapp(contextPath, webappDir);
+
+       tomcat.start();
+       tomcat.getServer().await();
+   }*/
 }
